@@ -1,16 +1,1 @@
-# adachi_roll
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![tohru-adachi-true-restored-v0-qbzmc4rkoi1b1_png](https://github.com/coltginger/Adachi-Roll/assets/128599430/6be36191-1b86-4c2c-b333-93b0e9af5944)
