@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    dynamic audio = PlayAudio();
     return MaterialApp(
       home:Scaffold(
         appBar: AppBar(
@@ -23,18 +22,38 @@ class MyApp extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
+          child: const PlayAudio(),
         )
       ),
     );
   }
 }
 
-Future PlayAudio() async{
-  try{
-    final AudioPlayer player = AudioPlayer();
-    return await player.play(AssetSource('assets/menusong.mp3')); 
-  } catch(e){
-    print("mamaste");
-    return null;
+class PlayAudio extends StatefulWidget {
+  const PlayAudio({super.key});
+
+  @override
+  State<PlayAudio> createState() => _PlayAudioState();
+}
+
+class _PlayAudioState extends State<PlayAudio> {
+
+  final player = AudioPlayer();
+
+  @override
+  Widget build(BuildContext context) {
+    playSound();
+    return ElevatedButton(
+      onPressed: (){
+        
+      },
+      child: const Text('Text')
+    );
+  }
+
+  Future<void> playSound() async{
+    String audioPath = "menusong.mp3";
+
+    await player.play(AssetSource(audioPath));
   }
 }
