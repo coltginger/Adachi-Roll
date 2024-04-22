@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
       home:Scaffold(
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 221, 199, 0),
+          title: const Text('ADACHI ROLL!!!!'),
         ),
         body: Container(
+          alignment: Alignment.center,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/mainmenu.png'),
@@ -47,7 +49,8 @@ class _PlayAudioState extends State<PlayAudio> {
       onPressed: (){
         
       },
-      child: const Text('Text')
+      child: const Text('CLICK TO ROLL'),
+
     );
   }
 
